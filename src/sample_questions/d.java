@@ -6,28 +6,28 @@ import java.util.Scanner;
 
 public class d {
     public static void main(String[] args) {
-        //Soru 31-)
-        //Kullanıcıdan Arrayin uzunlugunu isteyin.
-        //Ardından kullanıcıdan Arrayin elemanlarını girmesini isteyin.
-        //İpucu:  Önce uzunluk alıp arrayi oluştur daha sonra loop ile kullancııya doldurt
+
+        //Soru 33-)
+        //Array kullanarak String bir cümleyi Reverse eden (tersine çeviren)
+        // bir Java programı yazın (boşluklar ve özel karakterler dahil).
+
+        //Örnek:
+        //String str=''Kodlama harika.''
+        //String arr[]: ".etaerg si gnidoC"
+        //İpucu: Önce Split kullanarak Arraye çevirin ardından Loop kullanarak son karakterden başlayıp tersten yazdırın
 
 
+        String str="Kodlama harika.";
+        String []ters=new String[str.length()];
 
+        for (int i = 0; i <str.length() ; i++) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen liste uzunlugunu giriniz");
-        int arrayUzunlugu= scan.nextInt();
+            ters[(str.length()-1)-i]=str.substring(i,i+1);
 
-        int [] kullaniciarrayi= new int[arrayUzunlugu];
-
-        for (int i = 0; i <arrayUzunlugu ; i++) {
-            System.out.println("listenin " +i + " index degerini giriniz:");
-            int elementler= scan.nextInt();
-
-            kullaniciarrayi[i]=elementler;
 
         }
-        System.out.println("arrayin son hali"+ Arrays.toString(kullaniciarrayi));
+        System.out.println("Stringin tersten yazilisi:");
+        System.out.println(Arrays.toString(ters));
 
     }
 

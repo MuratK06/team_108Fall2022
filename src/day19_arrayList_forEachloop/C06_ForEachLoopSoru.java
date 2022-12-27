@@ -1,5 +1,7 @@
 package day19_arrayList_forEachloop;
 
+import java.util.Scanner;
+
 public class C06_ForEachLoopSoru {
     public static void main(String[] args) {
 
@@ -7,8 +9,11 @@ public class C06_ForEachLoopSoru {
         // harf cumlede kullanilmissa kac kere kullanildigini yazdirin,
         // kullanilmadiysa “harf cumlede kullanilmamis” yazdirin
 
-        String cumle="Java ogrenmek cok guzel";
-        String harf="a";
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lutfen bir cumle giriniz: ");
+        String cumle=scan.nextLine();
+        System.out.println("Lutfen bir harf giriniz:  ");
+        String harf=scan.nextLine();
 
         String[] cumleArr=cumle.split(""); // cumleyi tek tek harflere ayiririr
 
