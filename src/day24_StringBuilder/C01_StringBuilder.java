@@ -23,5 +23,15 @@ public class C01_StringBuilder {
         System.out.println(sb2); // Java Candir.
         System.out.println(sb2.capacity()); // 24 = 2 * 11 +2
 
+        System.out.println("============");
+
+        StringBuilder sb=new StringBuilder();
+        System.out.println(sb);
+        sb.append("murat");
+        System.out.println(sb);
+        System.out.println(sb.capacity());
+        sb.trimToSize();
+
+
     }
 }
