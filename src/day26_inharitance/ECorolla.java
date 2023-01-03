@@ -8,4 +8,5 @@ public class ECorolla extends DToyota {
     String uretimYeri="Turkiye";
     String teker="200.55 teker";
     String vites="vites belirtilmedi";
+
 }
