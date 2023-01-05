@@ -16,4 +16,9 @@ public class M02_Child0finterface implements I01_Interface {
     public String method3() {
         return null;
     }
+
+    @Override
+    public void method44() {
+
+    }
 }

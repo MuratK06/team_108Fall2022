@@ -29,5 +29,13 @@ public class N02_ListIterator {
         }
 
         System.out.println(sayilar);
+
+
+        //tersten yazdir
+
+        while (lit.hasPrevious()){
+
+            System.out.print(lit.previous()+" ");
+        }
     }
 }

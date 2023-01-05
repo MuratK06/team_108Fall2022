@@ -3,6 +3,9 @@ package day30_interfaces_iterator;
 public interface I01_Interface {
 
 
+    // INterface = Arayuz
+
+
 
     // Interface'lerde tum method'lar public ve abstract'tir.
     // Interface'lerde tum variable'lar public, static ve final'dir.
@@ -32,6 +35,8 @@ public interface I01_Interface {
 
     int method2();
     String method3();
+
+    public abstract void method44();
 
 
 }

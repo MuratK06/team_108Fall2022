@@ -1,6 +1,6 @@
 package day30_interfaces_iterator;
 
-public class M01_Child0finterface implements I01_Interface{
+public class M01_Child0finterface implements I01_Interface,I02_Interface{
 
     // Bir class baska bir class'i extends keyword ile parent edinebilir
     // Ancak birden fazla class'i parent EDINEMEZ
@@ -35,5 +35,24 @@ public class M01_Child0finterface implements I01_Interface{
     @Override
     public String method3() {
         return null;
+    }
+
+    @Override
+    public void method44() {
+
+    }
+
+    @Override
+    public void method5() {
+
+    }
+
+    @Override
+    public int method6() {
+        return 0;
+    }
+
+    public static void main(String[] args) {
+
     }
 }

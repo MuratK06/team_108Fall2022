@@ -32,7 +32,7 @@ public class N01_Iterator {
 
         // index yapisini kullanmadan tum elementleri yazdirin
 
-        Iterator itr= sayilar.iterator();
+        Iterator  itr= sayilar.iterator();
 
         System.out.println(itr.next()); // 5
 
