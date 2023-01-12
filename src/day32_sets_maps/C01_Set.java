@@ -6,6 +6,11 @@ import java.util.List;
 import java.util.Set;
 
 public class C01_Set {
+
+
+
+
+
     public static void main(String[] args) {
         // Collections, objelerden olusan bir toplulugu bir arada tutan yapilardir
         // Data turu olarak Object secilirse, icerisine her data turunden element konulabilir
@@ -14,6 +19,7 @@ public class C01_Set {
         // hatta bazen mumkun olmayabilir
 
         Set<Object> karisikSet= new HashSet<>();
+
 
         karisikSet.add(12);
         karisikSet.add("Java");
