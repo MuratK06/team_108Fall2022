@@ -327,10 +327,65 @@ public class MapMethodDepo {
         System.out.println("----------------------------");
 
 
-        for (String each:isimSoyisimSiraliSet
-             ) {
+        for (String each : isimSoyisimSiraliSet
+        ) {
             System.out.println(each);
         }
+
+    }
+
+    public static void isimleyazdirma(Map<Integer, String> ogrenciMap) {
+        Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
+        Set<String> isimSet = new TreeSet<>();
+
+        for (Map.Entry<Integer, String> eachEntry : entrySeti
+        ) {
+            String entryValue = eachEntry.getValue();
+
+            String[] entryValueArr = entryValue.split("-");
+
+            String istenenFormattakiBilgi = eachEntry.getKey() + " " +
+                    entryValueArr[0] + " " +
+                    entryValueArr[1] + " " +
+                    entryValueArr[2] + " " +
+                    entryValueArr[3] + " " +
+                    entryValueArr[4];
+
+            isimSet.add(istenenFormattakiBilgi);
+
+        }
+        System.out.println(" isim soyisim no sinif sube bolum");
+        System.out.println("----------------------------");
+
+
+        for (String each : isimSet
+        ) {
+            System.out.println(each);
+        }
+    }
+
+    public static void siniflistesiyazdir(Map<Integer, String> ogrenciMap, String sinif) {
+        System.out.println(" sinif no isim soyisim  sube bolum");
+        System.out.println("----------------------------");
+        Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
+        Set<String> sinifliste = new TreeSet<>();
+
+        for (Map.Entry<Integer, String> eachEntry:entrySeti
+             ) {
+            String entryValue=eachEntry.getValue();
+            String[] entryValueArr = entryValue.split("-");
+
+// 101, "Ali-Can-12-H-MF
+            if (entryValueArr[2].equalsIgnoreCase(sinif)) {
+                System.out.println(entryValueArr[2] + " "+ eachEntry.getKey() + " " + " " + entryValueArr[0] + " " +
+                        entryValueArr[1] + " " + entryValueArr[3]+ " " + entryValueArr[4]);
+            }
+
+        }
+
+
+
+
 
     }
 }

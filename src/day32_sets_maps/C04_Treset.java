@@ -13,6 +13,7 @@ public class C04_Treset {
         sirali.add(1);
         sirali.add(3);
         sirali.add(25);
+        sirali.add(87);
 
         System.out.println(sirali); // [1, 3, 13, 25, 34]
 

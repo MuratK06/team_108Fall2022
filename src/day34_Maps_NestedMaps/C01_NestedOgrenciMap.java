@@ -16,6 +16,7 @@ public class C01_NestedOgrenciMap {
         ogrenci101.put("Sinif","11");
         ogrenci101.put("Sube","H");
         ogrenci101.put("Bolum","MF");
+        ogrenci101.put("Okul","Yildiz");
 
         Map<String ,String> ogrenci102=new HashMap<>();
         ogrenci102.put("Isim","Veli");
@@ -30,6 +31,7 @@ public class C01_NestedOgrenciMap {
         ogrenci103.put("Sinif","11");
         ogrenci103.put("Sube","K");
         ogrenci103.put("Bolum","TM");
+        ogrenci103.put("Sehir", "Ankara");
 
         ogrenciMap.put(101,ogrenci101);
         ogrenciMap.put(102,ogrenci102);
@@ -48,6 +50,8 @@ public class C01_NestedOgrenciMap {
 
         System.out.println(ogrenciMap.get(101).get("Isim")); // Ali
         System.out.println(ogrenciMap.get(103).get("Soyisim")); //Cem
+        System.out.println(ogrenciMap.get(101).get("Okul"));
+        System.out.println(ogrenciMap.get(103).get("Sehir"));
 
         Set<Map.Entry<Integer,Map<String,String>>> ogrenciEntrySeti=ogrenciMap.entrySet();
 
