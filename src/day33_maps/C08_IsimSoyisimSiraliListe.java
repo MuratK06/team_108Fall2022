@@ -11,6 +11,7 @@ public class C08_IsimSoyisimSiraliListe {
         // seklinde sirali olarak yazdiran bir method olusturun
 
         Map<Integer,String> ogrenciMap= MapMethodDepo.ogrenciMapOlustur();
+        ogrenciMap.put(110,"Berivan-Gokkaya-11-M-TM");
 
         MapMethodDepo.isimSoyisimSiraliListeYazdir(ogrenciMap);
     }
